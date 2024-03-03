@@ -59,7 +59,7 @@ jobs:
         run: |
           reticulate::install_python("3.9.12")
           reticulate::install_miniconda()
-          install.packages("https://github.com/Sage-Bionetworks/synapser/archive/refs/tags/1.3.0.zip", repos=NULL)
+          install.packages("https://github.com/Sage-Bionetworks/synapser/archive/refs/tags/1.3.0.zip", repos=NULL, type="source")
 
       - uses: r-lib/actions/check-r-package@v2
         with:
